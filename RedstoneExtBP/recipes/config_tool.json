@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_config_tool"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:paper"
+      }
+    ],
+    "pattern": [
+      " I ",
+      "IPI",
+      " P "
+    ],
+    "key": {
+      "I": "minecraft:iron_ingot",
+      "P": "minecraft:paper"
+    },
+    "result": {
+      "item": "wr:config_tool",
+      "count": 1
+    }
+  }
+}

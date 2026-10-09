@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_key_terminal"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:amethyst_shard"
+      }
+    ],
+    "pattern": [
+      "IAI",
+      "ICI",
+      "IRI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "wr:key_terminal",
+      "count": 1
+    }
+  }
+}

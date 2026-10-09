@@ -1,0 +1,9 @@
+{
+  "name": "redstone-ext-harness",
+  "private": true,
+  "type": "module",
+  "description": "@minecraft/server のスタブを使って BP/scripts をゲーム外で動かすテストハーネス",
+  "scripts": {
+    "test": "node test.mjs"
+  }
+}

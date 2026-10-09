@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_block_breaker"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:iron_pickaxe"
+      }
+    ],
+    "pattern": [
+      "III",
+      "IPI",
+      "IRI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "P": {
+        "item": "minecraft:iron_pickaxe"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "wr:block_breaker",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_or_gate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:comparator"
+      }
+    ],
+    "pattern": [
+      "SCS",
+      " G "
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:comparator"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:stone"
+      }
+    },
+    "result": {
+      "item": "wr:or_gate",
+      "count": 1
+    }
+  }
+}

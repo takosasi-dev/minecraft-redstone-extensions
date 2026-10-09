@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_rs_latch"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:redstone_torch"
+      }
+    ],
+    "pattern": [
+      "TST",
+      " I "
+    ],
+    "key": {
+      "T": {
+        "item": "minecraft:redstone_torch"
+      },
+      "S": {
+        "item": "minecraft:stone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "wr:rs_latch",
+      "count": 1
+    }
+  }
+}

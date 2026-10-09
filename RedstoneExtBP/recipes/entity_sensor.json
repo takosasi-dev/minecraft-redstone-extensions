@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_entity_sensor"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:ender_eye"
+      }
+    ],
+    "pattern": [
+      "AEA",
+      "RIR",
+      "III"
+    ],
+    "key": {
+      "E": {
+        "item": "minecraft:ender_eye"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "result": {
+      "item": "wr:entity_sensor",
+      "count": 1
+    }
+  }
+}

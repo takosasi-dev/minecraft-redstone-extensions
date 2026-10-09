@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_ore_refiner"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:furnace"
+      }
+    ],
+    "pattern": [
+      "IDI",
+      "RFR",
+      "III"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "F": {
+        "item": "minecraft:furnace"
+      }
+    },
+    "result": {
+      "item": "wr:ore_refiner",
+      "count": 1
+    }
+  }
+}

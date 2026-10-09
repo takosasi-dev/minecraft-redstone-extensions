@@ -1,0 +1,340 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:glow_block",
+      "menu_category": {
+        "category": "construction",
+        "group": "wr:itemGroup.name.build_ext"
+      },
+      "states": {
+        "wr:light": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "wr:color": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:glow_block.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_glow_block_red",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:light_emission": 0,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "wr:glow_block": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('wr:light') == 1",
+        "components": {
+          "minecraft:light_emission": 1
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 2",
+        "components": {
+          "minecraft:light_emission": 2
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 3",
+        "components": {
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 4",
+        "components": {
+          "minecraft:light_emission": 4
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 5",
+        "components": {
+          "minecraft:light_emission": 5
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 6",
+        "components": {
+          "minecraft:light_emission": 6
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 7",
+        "components": {
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 8",
+        "components": {
+          "minecraft:light_emission": 8
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 9",
+        "components": {
+          "minecraft:light_emission": 9
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 10",
+        "components": {
+          "minecraft:light_emission": 10
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 11",
+        "components": {
+          "minecraft:light_emission": 11
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 12",
+        "components": {
+          "minecraft:light_emission": 12
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 13",
+        "components": {
+          "minecraft:light_emission": 13
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 14",
+        "components": {
+          "minecraft:light_emission": 14
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 15",
+        "components": {
+          "minecraft:light_emission": 15
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_red",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_white",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_orange",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_magenta",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_light_blue",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 5",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_yellow",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 6",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_lime",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 7",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_pink",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 8",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_gray",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_light_gray",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 10",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_cyan",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 11",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_purple",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 12",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_blue",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 13",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_brown",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 14",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_green",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 15",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_glow_block_black",
+              "render_method": "opaque"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

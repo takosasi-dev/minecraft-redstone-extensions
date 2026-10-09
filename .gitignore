@@ -1,0 +1,19 @@
+# --- ビルド成果物(ソースからいつでも再生成できるので含めない) ---
+dist/
+*.mcaddon
+*.mcpack
+*.zip
+
+# --- test.mjs が起動のたびに RedstoneExtBP/scripts から写す物 ---
+tools/harness/scripts/
+# tools/harness/node_modules/@minecraft/ は自作のスタブなので含める(npm install はしない)
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- OS/エディタ ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

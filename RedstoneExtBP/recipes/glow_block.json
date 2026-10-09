@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_glow_block"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:amethyst_shard"
+      }
+    ],
+    "pattern": [
+      " A ",
+      "AGA",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "G": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "result": {
+      "item": "wr:glow_block",
+      "count": 2
+    }
+  }
+}

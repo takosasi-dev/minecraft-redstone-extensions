@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_circuit_board"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:copper_ingot"
+      }
+    ],
+    "pattern": [
+      "GRG",
+      "RCR",
+      "GRG"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:green_dye"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "C": {
+        "item": "minecraft:copper_ingot"
+      }
+    },
+    "result": {
+      "item": "wr:circuit_board",
+      "count": 4
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:block_breaker",
+      "menu_category": {
+        "category": "items",
+        "group": "wr:itemGroup.name.redstone_ext"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ],
+          "y_rotation_offset": 0
+        }
+      },
+      "states": {
+        "wr:busy": [
+          false,
+          true
+        ],
+        "wr:armed": [
+          false,
+          true
+        ],
+        "wr:powered": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:block_breaker.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_block_breaker_side",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "wr_block_breaker_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:redstone_consumer": {
+        "min_power": 0,
+        "propagates_power": false
+      },
+      "wr:block_breaker": {},
+      "minecraft:tick": {
+        "interval_range": [
+          4,
+          4
+        ],
+        "looping": true
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:busy') == false",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_block_breaker_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_block_breaker_top",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:busy') == true",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_block_breaker_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_block_breaker_top_on",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:busy') == false",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_block_breaker_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_block_breaker_top",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:busy') == true",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_block_breaker_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_block_breaker_top_on",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:busy') == false",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_block_breaker_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_block_breaker_top",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:busy') == true",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_block_breaker_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_block_breaker_top_on",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:busy') == false",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_block_breaker_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_block_breaker_top",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:busy') == true",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_block_breaker_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_block_breaker_top_on",
+              "render_method": "opaque"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

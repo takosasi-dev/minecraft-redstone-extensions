@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_xor_gate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:comparator"
+      }
+    ],
+    "pattern": [
+      "SCS",
+      " A "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stone"
+      },
+      "C": {
+        "item": "minecraft:comparator"
+      },
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "result": {
+      "item": "wr:xor_gate",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.wr_panel_down",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [0, 0.5, 0]
+      },
+      "bones": [
+        {
+          "name": "panel",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 1, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "south": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "east": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "west": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "up": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "down": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.wr_panel_up",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [0, 0.5, 0]
+      },
+      "bones": [
+        {
+          "name": "panel",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            {
+              "origin": [-8, 15, -8],
+              "size": [16, 1, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "south": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "east": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "west": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "up": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "down": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.wr_panel_north",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [0, 0.5, 0]
+      },
+      "bones": [
+        {
+          "name": "panel",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 16, 1],
+              "uv": {
+                "north": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "south": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "east": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "west": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "up": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "down": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.wr_panel_south",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [0, 0.5, 0]
+      },
+      "bones": [
+        {
+          "name": "panel",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, 7],
+              "size": [16, 16, 1],
+              "uv": {
+                "north": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "south": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "east": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "west": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "up": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "down": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.wr_panel_east",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [0, 0.5, 0]
+      },
+      "bones": [
+        {
+          "name": "panel",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [1, 16, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "south": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "east": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "west": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "up": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "down": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.wr_panel_west",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [0, 0.5, 0]
+      },
+      "bones": [
+        {
+          "name": "panel",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            {
+              "origin": [7, 0, -8],
+              "size": [1, 16, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "south": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "east": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "west": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 16]
+                },
+                "up": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                },
+                "down": {
+                  "uv": [0, 0],
+                  "uv_size": [16, 1]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_hazard_stripe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:yellow_concrete"
+      }
+    ],
+    "pattern": [
+      "YB",
+      "BY"
+    ],
+    "key": {
+      "Y": {
+        "item": "minecraft:yellow_concrete"
+      },
+      "B": {
+        "item": "minecraft:black_concrete"
+      }
+    },
+    "result": {
+      "item": "wr:hazard_stripe",
+      "count": 4
+    }
+  }
+}

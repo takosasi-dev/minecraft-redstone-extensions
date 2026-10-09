@@ -1,0 +1,92 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "wr:transmitter",
+              "name": "wr:itemGroup.name.redstone_ext"
+            },
+            "items": [
+              "wr:transmitter",
+              "wr:receiver",
+              "wr:wire",
+              "wr:corner_riser",
+              "wr:pulse_generator",
+              "wr:variable_repeater",
+              "wr:asym_repeater",
+              "wr:not_gate",
+              "wr:instant_repeater",
+              "wr:and_gate",
+              "wr:or_gate",
+              "wr:xor_gate",
+              "wr:nand_gate",
+              "wr:nor_gate",
+              "wr:xnor_gate",
+              "wr:threshold",
+              "wr:rs_latch",
+              "wr:t_flipflop",
+              "wr:constant",
+              "wr:channel_hub",
+              "wr:lamp",
+              "wr:adder",
+              "wr:subtractor",
+              "wr:counter",
+              "wr:display",
+              "wr:entity_sensor",
+              "wr:daylight_sensor",
+              "wr:container_sensor",
+              "wr:timer",
+              "wr:one_shot",
+              "wr:clock_divider",
+              "wr:sequencer",
+              "wr:randomizer",
+              "wr:weather_sensor",
+              "wr:ore_refiner",
+              "wr:xp_tank",
+              "wr:block_dispenser",
+              "wr:hopper_dropper",
+              "wr:spike",
+              "wr:block_breaker",
+              "wr:compare",
+              "wr:register",
+              "wr:sound_block",
+              "wr:lock",
+              "wr:key_terminal",
+              "wr:access_log",
+              "wr:card_key",
+              "wr:config_tool",
+              "wr:guide_book",
+              "wr:probe",
+              "wr:remote",
+              "wr:wrench"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "wr:glow_block",
+              "name": "wr:itemGroup.name.build_ext"
+            },
+            "items": [
+              "wr:glow_block",
+              "wr:light_panel",
+              "wr:circuit_board",
+              "wr:cable_panel",
+              "wr:polished_amethyst",
+              "wr:machine_panel",
+              "wr:hazard_stripe"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

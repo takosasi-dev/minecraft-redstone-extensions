@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_compare"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:comparator"
+      }
+    ],
+    "pattern": [
+      " Q ",
+      "RTR",
+      "SSS"
+    ],
+    "key": {
+      "Q": {
+        "item": "minecraft:quartz"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "T": {
+        "item": "minecraft:copper_ingot"
+      },
+      "S": {
+        "item": "minecraft:stone"
+      }
+    },
+    "result": {
+      "item": "wr:compare",
+      "count": 1
+    }
+  }
+}

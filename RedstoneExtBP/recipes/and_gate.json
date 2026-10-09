@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_and_gate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:comparator"
+      }
+    ],
+    "pattern": [
+      "SCS",
+      " I "
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:comparator"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "minecraft:stone"
+      }
+    },
+    "result": {
+      "item": "wr:and_gate",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,302 @@
+pack.name=Redstone Extensions v1.31.3
+pack.description=Wireless redstone, multi-face dyeable wire, probe, logic gates, memory blocks, arithmetic, counters, numeric displays, sensors, dimmable lamps and decorative building blocks.
+
+## Blocks
+tile.wr:transmitter.name=Wireless Transmitter
+tile.wr:receiver.name=Wireless Receiver
+tile.wr:wire.name=Multi-Face Redstone Wire
+tile.wr:corner_riser.name=Corner Riser Block
+tile.wr:pulse_generator.name=Pulse Generator
+tile.wr:variable_repeater.name=Variable Delay Repeater
+tile.wr:asym_repeater.name=Asymmetric Delay Repeater
+tile.wr:instant_repeater.name=Instant Repeater
+tile.wr:not_gate.name=NOT Gate
+tile.wr:and_gate.name=AND Gate
+tile.wr:or_gate.name=OR Gate
+tile.wr:xor_gate.name=XOR Gate
+tile.wr:nand_gate.name=NAND Gate
+tile.wr:nor_gate.name=NOR Gate
+tile.wr:xnor_gate.name=XNOR Gate
+tile.wr:threshold.name=Threshold Block
+tile.wr:rs_latch.name=RS Latch
+tile.wr:t_flipflop.name=T Flip-Flop
+tile.wr:constant.name=Constant Source
+tile.wr:channel_hub.name=Channel Manager
+tile.wr:lamp.name=Dimmable Redstone Lamp
+tile.wr:glow_block.name=Glow Block
+tile.wr:light_panel.name=Hidden Light Panel
+tile.wr:adder.name=Adder
+tile.wr:subtractor.name=Subtractor
+tile.wr:counter.name=Counter
+tile.wr:display.name=Numeric Display
+tile.wr:entity_sensor.name=Entity Sensor
+tile.wr:daylight_sensor.name=Time Sensor
+tile.wr:circuit_board.name=Circuit Board Block
+tile.wr:cable_panel.name=Cable Panel
+tile.wr:polished_amethyst.name=Polished Amethyst Block
+tile.wr:machine_panel.name=Machine Panel
+tile.wr:hazard_stripe.name=Hazard Stripe
+tile.wr:lock.name=Security Lock
+tile.wr:key_terminal.name=Key Card Terminal
+tile.wr:access_log.name=Access Log
+tile.wr:container_sensor.name=Container Sensor
+tile.wr:timer.name=Time Trigger
+tile.wr:one_shot.name=One Shot
+tile.wr:clock_divider.name=Clock Divider
+tile.wr:sequencer.name=Sequencer
+tile.wr:randomizer.name=Randomizer
+tile.wr:weather_sensor.name=Weather Sensor
+tile.wr:ore_refiner.name=Ore Refiner
+tile.wr:xp_tank.name=XP Tank
+tile.wr:block_dispenser.name=Block Dispenser
+tile.wr:hopper_dropper.name=Hopper Dropper
+tile.wr:spike.name=Spike
+tile.wr:block_breaker.name=Block Breaker
+tile.wr:sound_block.name=Sound Block
+tile.wr:compare.name=Comparator Block
+tile.wr:register.name=Register
+item.wr:config_tool.name=Config Copier
+
+## Creative group names
+## The group name itself is the translation key; without it the raw string shows up.
+## A group only takes effect once declared in item_catalog/crafting_item_catalog.json.
+wr:itemGroup.name.redstone_ext=Redstone Extensions
+wr:itemGroup.name.build_ext=Redstone Extensions Blocks
+
+## Items
+item.wr:remote.name=Wireless Remote
+item.wr:probe.name=Redstone Probe
+item.wr:guide_book.name=Redstone Extensions Guide
+item.wr:wrench.name=Wiring Wrench
+item.wr:card_key.name=Key Card
+
+## Messages
+wr.msg.remote.on=Remote [%s] : §aON§r
+wr.msg.remote.off=Remote [%s] : §7OFF§r
+wr.msg.channel.set=Channel: §e%s§r
+wr.msg.channel.renamed=§e%s§r → §e%s§r (transmitters %s / receivers %s / remotes %s)
+wr.msg.channel.gone=§cBlock not found (destroyed?)§r
+wr.msg.probe.none=§7NO TARGET§r
+wr.msg.probe.wire=%s : power §b%s§r
+wr.msg.probe.channel=%s : CH[§e%s§r] power §b%s§r
+wr.msg.probe.vanilla=%s : power §b%s§r
+wr.msg.probe.record.start=§aRecording§r: %s (sneak + use to stop)
+wr.msg.probe.record.stop=§7Recording stopped§r
+wr.msg.probe.wave=§b%s§r  %s
+wr.msg.pulse.period=Pulse period: §b%s§r ticks
+wr.msg.repeater.delay=Delay: §b%s§r ticks
+wr.msg.asym.delay=Turn-on: §b%s§r ticks (§b%s§r s) / Turn-off: §b%s§r ticks (§b%s§r s)
+wr.msg.threshold.level=ON at §b%s§r or above / OFF below §b%s§r
+wr.msg.constant.power=Output: §b%s§r
+wr.msg.wire.dyed=Wire color: §e%s§r
+wr.msg.wire.glow.on=§eWire now glows§r (brightness = power)
+wr.msg.wire.glow.off=§7Wire glow turned off§r
+wr.msg.lamp.dyed=Lamp color: §e%s§r
+wr.msg.glow.dyed=Glow block color: §e%s§r
+wr.msg.light.level=Brightness: §b%s§r
+wr.msg.wrench.face=Attached to: §b%s§r
+wr.msg.wrench.only=§7Only one face is usable here§r
+wr.msg.wrench.nosupport=§cNothing here to attach to§r
+wr.msg.wrench.target=§7Use this on a wire or light panel§r
+wr.msg.wrench.aligned=Aligned §a%s§r plate(s) to §b%s§r (skipped, unsupported: %s)
+wr.msg.lock.opened=§aUnlocked§r (closes in %s s)
+wr.msg.lock.denied=§cAccess denied§r
+wr.msg.lock.blankcard=§7This key card has no key ID written on it§r
+wr.msg.lock.revoked=§cThis card has been revoked§r
+wr.msg.lock.unknown=§cThis card was never issued§r
+wr.msg.lock.noway=§cKey ID and password are both empty. Nobody can open this§r
+wr.msg.lock.configured=Key ID: §e%s§r / password: §e%s§r / open §b%s§r s
+wr.msg.lock.keyadded=Registered §a%s§r (%s key(s) accepted)
+wr.msg.lock.keyremoved=Removed §7%s§r (%s key(s) accepted)
+wr.msg.lock.keyfull=§cUp to %s key IDs§r
+wr.msg.key.badname=§cKey ID is empty§r
+wr.msg.key.exists=§c%s§r already exists (use the re-issue menu to duplicate)
+wr.msg.key.wrongpw=§cWrong re-issue password for %s§r
+wr.msg.key.reissued=Re-issued §e%s§r
+wr.msg.key.givefail=§cCould not hand over the card§r
+wr.msg.key.written=Issued a key card for §e%s§r
+wr.msg.key.none=§7No keys have been issued§r
+wr.msg.key.revoked=Revoked §c%s§r
+wr.msg.key.restored=Restored §a%s§r
+wr.msg.key.deleted=§7Deleted the record for %s§r
+wr.msg.key.blank=§7This key card is blank§r
+wr.msg.key.valid=Key ID: §a%s§r (valid)
+wr.msg.key.unknown=Key ID: §c%s§r (never issued)
+wr.msg.counter.reset=§7Counter reset to 0§r
+wr.msg.display.value=Displayed value: §b%s§r
+wr.msg.sensor.radius=Detection radius: §b%s§r blocks
+wr.msg.sensor.mode=Detecting: §e%s§r
+wr.msg.sensor.mode.all=everything
+wr.msg.sensor.mode.player=players
+wr.msg.sensor.mode.mob=mobs
+wr.msg.sensor.mode.item=dropped items
+wr.msg.daylight.day=§eStronger during the day§r
+wr.msg.daylight.night=§9Stronger at night§r
+wr.msg.container.mode=Measuring: §e%s§r
+wr.msg.container.mode.fill=fill level
+wr.msg.container.mode.kinds=item types
+wr.msg.container.mode.empty=empty slots
+wr.msg.container.mode.item=count of one item
+wr.msg.container.filter=Counting: §e%s§r
+wr.msg.container.nofilter=§7Cleared the counted item§r
+wr.msg.timer.at=§eFires at the set hour§r
+wr.msg.timer.every=§bFires every N hours§r
+wr.msg.timer.setat=Fires daily at §b%s§r:00
+wr.msg.timer.setevery=Fires every §b%s§r hour(s)
+wr.msg.log.cleared=§7Access log cleared§r
+wr.msg.oneshot.length=Pulse length: §b%s§r ticks (§b%s§r s)
+wr.msg.clockdiv.divisor=Passes 1 out of every §b%s§r pulses
+wr.msg.sequencer.period=Step interval: §b%s§r ticks
+wr.msg.random.analog=§eOutputs a random 0-15§r
+wr.msg.random.binary=§bOutputs either 0 or 15§r
+wr.msg.weather.normal=§eStronger in rain and thunder§r
+wr.msg.weather.inverted=§bStronger when clear (inverted)§r
+wr.msg.refiner.target=Target: §e%s§r (1 = §b%s§r points)
+wr.msg.refiner.status=Target: §e%s§r / stored: §b%s§r points
+wr.msg.refiner.notarget=§cNo target set§r (hold what you want and right-click)
+wr.msg.refiner.unsupported=§c%s§r is not in the value table
+wr.msg.xp.stored=Stored §a%s XP§r (total §b%s§r)
+wr.msg.xp.withdrew=Withdrew §a%s XP§r
+wr.msg.xp.empty=§7The tank is empty§r
+wr.msg.xp.none=§7You have no XP to store§r
+wr.msg.xp.full=§cThe tank is full§r (%s)
+wr.msg.xp.failed=§cFailed to transfer XP§r
+wr.msg.spike.normal=§7Normal mode§r (damage only)
+wr.msg.spike.hot=§6Hot mode§r (sets mobs on fire, so meat comes out cooked)
+wr.msg.compare.gt=Compare: §bmain > sub§r
+wr.msg.compare.ge=Compare: §bmain >= sub§r
+wr.msg.compare.eq=Compare: §bmain == sub§r
+wr.msg.register.cleared=Register cleared to §b0§r
+wr.msg.sound.selected=Sound §b%s§r (%s)
+wr.msg.display.decimal=§bDecimal 2-digit§r mode (pairs with the block to the west)
+wr.msg.display.hex=§bHex 1-digit§r mode
+wr.msg.config.copied=Copied settings from §a%s§r
+wr.msg.config.pasted=Pasted settings into §a%s§r
+wr.msg.config.empty=§7Nothing copied yet§r
+wr.msg.config.mismatch=§cDifferent block type§r (copied: %s / here: %s)
+wr.msg.config.unsupported=§7This block has no copyable settings§r
+wr.msg.sensor.mode.named=a named player
+wr.msg.sensor.named=Watching for: §e%s§r
+wr.msg.sensor.noname=§cName is empty (nobody is detected)§r
+wr.msg.unlock.ok=§aUnlocked %s channel(s)§r: %s
+wr.msg.unlock.ng=§cNo channel uses that password§r
+wr.msg.category.created=Created category §e%s§r
+wr.msg.category.moved=Moved §e%s§r to §b%s§r
+wr.msg.category.renamed=Category §e%s§r → §e%s§r (%s channels)
+wr.msg.category.deleted=Deleted category §e%s§r (%s channels back to default)
+wr.msg.category.none=§7No categories yet§r
+wr.msg.category.nochannel=§7No channels yet§r
+wr.msg.password.set=Password set on §e%s§r
+wr.msg.password.cleared=Password cleared on §e%s§r
+
+## UI
+wr.ui.pulse.title=Pulse Generator
+wr.ui.repeater.title=Variable Repeater
+wr.ui.repeater.label=Delay (ticks)
+wr.ui.asym.title=Asymmetric Repeater
+wr.ui.asym.rise=Turn-on delay (ticks)
+wr.ui.asym.fall=Turn-off delay (ticks)
+wr.ui.threshold.title=Threshold Block
+wr.ui.threshold.rise=Turns ON at (or above)
+wr.ui.threshold.fall=Turns OFF below (recommended <= rise)
+wr.ui.constant.title=Constant Source
+wr.ui.constant.label=Output strength
+wr.ui.light.title=Brightness
+wr.ui.light.label=Brightness (0 = off)
+wr.ui.sensor.title=Entity Sensor
+wr.ui.sensor.label=Detection radius (blocks)
+wr.ui.timer.at.title=Time Trigger
+wr.ui.timer.at.label=Fire daily at this hour
+wr.ui.timer.every.title=Time Trigger
+wr.ui.timer.every.label=Fire every N hours
+wr.ui.log.title=Access Log
+wr.ui.log.clear=§c🗑 Clear the log§r
+wr.ui.oneshot.title=One Shot
+wr.ui.oneshot.label=Pulse length (ticks)
+wr.ui.clockdiv.title=Clock Divider
+wr.ui.clockdiv.label=Pass 1 out of every N pulses
+wr.ui.sequencer.title=Sequencer
+wr.ui.sequencer.label=Step interval (ticks)
+wr.ui.sensor.named.title=Named Player Detection
+wr.ui.sensor.named.label=Player name to detect
+
+## Security
+wr.ui.lock.title=Security Lock
+wr.ui.lock.password=Password
+wr.ui.lock.settings=Security Lock Settings
+wr.ui.lock.keyid=Accepted key IDs (comma separated, up to 8; blank = no card access)
+wr.ui.lock.setpw=Password (blank = no password access)
+wr.ui.lock.seconds=Time held open (seconds)
+wr.ui.key.title=Key Card Terminal
+wr.ui.key.body=§e%s§r issued (§c%s§r revoked)
+wr.ui.key.write=§a+ Create a new key card§r
+wr.ui.key.write.title=New Key Card
+wr.ui.key.write.label=Key ID (up to 24 chars)
+wr.ui.key.write.pw=Re-issue password (blank = anyone may duplicate)
+wr.ui.key.reissue=§b🔁 Re-issue (duplicate) a key card§r
+wr.ui.key.reissue.title=Re-issue Key Card
+wr.ui.key.reissue.target=Key to duplicate (🔑 = password required)
+wr.ui.key.reissue.pw=Re-issue password
+wr.ui.key.reissue.newpw=New re-issue password (blank = keep current)
+wr.ui.key.revoke=§c🚫 Revoke / restore a key§r
+wr.ui.key.revoke.title=Revoke Key
+wr.ui.key.revoke.target=Target key ID
+wr.ui.key.revoke.action=Action
+wr.ui.key.list=§7📋 Show issued keys§r
+wr.ui.key.list.title=Issued Keys
+wr.ui.pulse.label=Period (ticks)
+wr.ui.remote.title=Remote Channel
+wr.ui.block.title=Block Channel
+wr.ui.channel.body=Current channel: §e%s§r\n\nPick a channel to switch to.
+wr.ui.channel.rename=§b✎ Rename a channel§r
+wr.ui.rename.title=Rename Channel
+wr.ui.rename.target=Channel to rename
+wr.ui.rename.label=New name (up to 24 chars)
+wr.ui.channel.new=§a+ Enter a new channel§r
+wr.ui.channel.new.title=New Channel
+wr.ui.channel.new.label=Channel name (up to 24 chars)
+wr.ui.channel.unlock=§d🔒 Enter a password§r
+wr.ui.unlock.title=Unlock Hidden Channels
+wr.ui.unlock.label=Password (remembered afterwards)
+wr.ui.category.entry=§b📁 %s§r (%s)
+wr.ui.category.body=Category: §b%s§r\n\nPick a channel to switch to.
+wr.ui.category.back=§7＜ Back§r
+
+## Channel Manager
+wr.ui.hub.title=Channel Manager
+wr.ui.hub.body=§b%s§r categories / §e%s§r channels
+wr.ui.hub.newcat=§a+ New category§r
+wr.ui.hub.newcat.title=New Category
+wr.ui.hub.newcat.label=Category name (up to 24 chars)
+wr.ui.hub.move=§b📁 Move a channel into a category§r
+wr.ui.hub.move.title=Move Channel
+wr.ui.hub.move.channel=Channel to move
+wr.ui.hub.move.category=Destination category
+wr.ui.hub.password=§d🔒 Set a channel password§r
+wr.ui.hub.password.title=Channel Password
+wr.ui.hub.password.channel=Target channel
+wr.ui.hub.password.label=Password (blank to clear)
+wr.ui.hub.editcat=§e✎ Rename / delete a category§r
+wr.ui.hub.editcat.title=Edit Category
+wr.ui.hub.editcat.target=Target category
+wr.ui.hub.editcat.label=New name (blank to delete)
+wr.ui.hub.list=§7📋 Show assignments§r
+wr.ui.hub.list.title=Channel List
+
+## Colors
+wr.color.red=Red
+wr.color.white=White
+wr.color.orange=Orange
+wr.color.magenta=Magenta
+wr.color.light_blue=Light Blue
+wr.color.yellow=Yellow
+wr.color.lime=Lime
+wr.color.pink=Pink
+wr.color.gray=Gray
+wr.color.light_gray=Light Gray
+wr.color.cyan=Cyan
+wr.color.purple=Purple
+wr.color.blue=Blue
+wr.color.brown=Brown
+wr.color.green=Green
+wr.color.black=Black

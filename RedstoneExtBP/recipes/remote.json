@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_remote"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:amethyst_shard"
+      }
+    ],
+    "pattern": [
+      " T",
+      "IA",
+      " S"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "T": {
+        "item": "minecraft:redstone_torch"
+      }
+    },
+    "result": {
+      "item": "wr:remote",
+      "count": 1
+    }
+  }
+}

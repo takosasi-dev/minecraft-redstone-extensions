@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_weather_sensor"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:glass"
+      }
+    ],
+    "pattern": [
+      "GGG",
+      "QQQ",
+      "IRI"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "Q": {
+        "item": "minecraft:quartz"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "wr:weather_sensor",
+      "count": 1
+    }
+  }
+}

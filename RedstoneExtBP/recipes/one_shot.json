@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_one_shot"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:repeater"
+      }
+    ],
+    "pattern": [
+      "IRI",
+      "RTR",
+      "III"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "T": {
+        "item": "minecraft:repeater"
+      }
+    },
+    "result": {
+      "item": "wr:one_shot",
+      "count": 1
+    }
+  }
+}

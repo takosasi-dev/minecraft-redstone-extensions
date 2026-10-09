@@ -1,0 +1,1942 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:adder",
+      "menu_category": {
+        "category": "items",
+        "group": "wr:itemGroup.name.redstone_ext"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ],
+          "y_rotation_offset": 0
+        }
+      },
+      "states": {
+        "wr:power": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:adder.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_adder_side",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "wr_adder_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": false,
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          4,
+          4
+        ],
+        "looping": true
+      },
+      "minecraft:redstone_producer": {
+        "power": 0
+      },
+      "wr:adder": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 1,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 2,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 3,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 4",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 4,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 5",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 5,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 6",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 6,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 7",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 7,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 8",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 8,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 9",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 9,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 10",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 10,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 11",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 11,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 12",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 12,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 13",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 13,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 14",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 14,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('wr:power') == 15",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "connected_faces": [
+              "north"
+            ],
+            "strongly_powered_face": "north"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 1,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 2,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 3,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 4",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 4,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 5",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 5,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 6",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 6,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 7",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 7,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 8",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 8,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 9",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 9,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 10",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 10,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 11",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 11,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 12",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 12,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 13",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 13,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 14",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 14,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('wr:power') == 15",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "connected_faces": [
+              "south"
+            ],
+            "strongly_powered_face": "south"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 1,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 2,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 3,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 4",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 4,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 5",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 5,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 6",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 6,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 7",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 7,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 8",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 8,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 9",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 9,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 10",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 10,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 11",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 11,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 12",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 12,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 13",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 13,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 14",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 14,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('wr:power') == 15",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "connected_faces": [
+              "east"
+            ],
+            "strongly_powered_face": "east"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 1,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 2,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 3,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 4",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 4,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 5",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 5,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 6",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 6,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 7",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 7,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 8",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 8,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 9",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 9,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 10",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 10,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 11",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 11,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 12",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 12,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 13",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 13,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 14",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 14,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('wr:power') == 15",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_adder_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_adder_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "connected_faces": [
+              "west"
+            ],
+            "strongly_powered_face": "west"
+          }
+        }
+      }
+    ]
+  }
+}

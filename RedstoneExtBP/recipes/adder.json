@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_adder"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:comparator"
+      }
+    ],
+    "pattern": [
+      "RIR",
+      "ICI",
+      "RIR"
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:comparator"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "wr:adder",
+      "count": 1
+    }
+  }
+}

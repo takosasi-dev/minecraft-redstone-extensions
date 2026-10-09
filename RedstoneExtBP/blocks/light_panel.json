@@ -1,0 +1,287 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:light_panel",
+      "menu_category": {
+        "category": "construction",
+        "group": "wr:itemGroup.name.build_ext"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      },
+      "states": {
+        "wr:light": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:light_panel.name",
+      "minecraft:geometry": "geometry.wr_panel_down",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_light_panel",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          1,
+          16
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 0,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": false,
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:movable": {
+        "movement_type": "popped"
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          20,
+          20
+        ],
+        "looping": true
+      },
+      "wr:light_panel": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('wr:light') == 1",
+        "components": {
+          "minecraft:light_emission": 1
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 2",
+        "components": {
+          "minecraft:light_emission": 2
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 3",
+        "components": {
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 4",
+        "components": {
+          "minecraft:light_emission": 4
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 5",
+        "components": {
+          "minecraft:light_emission": 5
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 6",
+        "components": {
+          "minecraft:light_emission": 6
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 7",
+        "components": {
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 8",
+        "components": {
+          "minecraft:light_emission": 8
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 9",
+        "components": {
+          "minecraft:light_emission": 9
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 10",
+        "components": {
+          "minecraft:light_emission": 10
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 11",
+        "components": {
+          "minecraft:light_emission": 11
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 12",
+        "components": {
+          "minecraft:light_emission": 12
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 13",
+        "components": {
+          "minecraft:light_emission": 13
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 14",
+        "components": {
+          "minecraft:light_emission": 14
+        }
+      },
+      {
+        "condition": "q.block_state('wr:light') == 15",
+        "components": {
+          "minecraft:light_emission": 15
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:geometry": "geometry.wr_panel_down",
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              1,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:geometry": "geometry.wr_panel_up",
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              15,
+              -8
+            ],
+            "size": [
+              16,
+              1,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:geometry": "geometry.wr_panel_south",
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              7
+            ],
+            "size": [
+              16,
+              16,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:geometry": "geometry.wr_panel_north",
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:geometry": "geometry.wr_panel_west",
+          "minecraft:selection_box": {
+            "origin": [
+              7,
+              0,
+              -8
+            ],
+            "size": [
+              1,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:geometry": "geometry.wr_panel_east",
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              1,
+              16,
+              16
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:display",
+      "menu_category": {
+        "category": "items",
+        "group": "wr:itemGroup.name.redstone_ext"
+      },
+      "states": {
+        "wr:value": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "wr:dec": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:display.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_display_0",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "wr_display_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:light_emission": 0,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:redstone_consumer": {
+        "min_power": 0,
+        "propagates_power": false
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          4,
+          4
+        ],
+        "looping": true
+      },
+      "wr:display": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('wr:value') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_0",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 0
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_1",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_2",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_3",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_4",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 5",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_5",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 6",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_6",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 7",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_7",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 8",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_8",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_9",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 10",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_a",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 11",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_b",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 12",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_c",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 13",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_d",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 14",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_e",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:value') == 15",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_display_f",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "wr_display_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      }
+    ]
+  }
+}

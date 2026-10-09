@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_display"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:glass"
+      }
+    ],
+    "pattern": [
+      "III",
+      "GRG",
+      "III"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "wr:display",
+      "count": 1
+    }
+  }
+}

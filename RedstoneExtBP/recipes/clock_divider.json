@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_clock_divider"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:comparator"
+      }
+    ],
+    "pattern": [
+      "RCR",
+      "ITI",
+      "RCR"
+    ],
+    "key": {
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "C": {
+        "item": "minecraft:comparator"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "T": {
+        "item": "minecraft:repeater"
+      }
+    },
+    "result": {
+      "item": "wr:clock_divider",
+      "count": 1
+    }
+  }
+}

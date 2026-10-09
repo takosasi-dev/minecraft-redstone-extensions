@@ -1,0 +1,31 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_light_panel"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:glowstone"
+      }
+    ],
+    "pattern": [
+      "AGA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "G": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "result": {
+      "item": "wr:light_panel",
+      "count": 4
+    }
+  }
+}

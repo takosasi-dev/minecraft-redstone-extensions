@@ -1,0 +1,521 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:xp_tank",
+      "menu_category": {
+        "category": "items",
+        "group": "wr:itemGroup.name.redstone_ext"
+      },
+      "states": {
+        "wr:power": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:xp_tank.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_xp_tank_side",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "wr_xp_tank_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:light_emission": 0,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:movable": {
+        "movement_type": "immovable"
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          20,
+          20
+        ],
+        "looping": true
+      },
+      "minecraft:redstone_producer": {
+        "power": 0
+      },
+      "wr:xp_tank": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 0
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 1,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 1
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 2,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 2
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 3,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 4,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 4
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 5",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 5,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 5
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 6",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 6,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 6
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 7",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 7,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 8",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 8,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 9,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 10",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 10,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 11",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 11,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 12",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 12,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 13",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 13,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 14",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 14,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 15",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_xp_tank_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_xp_tank_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          },
+          "minecraft:light_emission": 7
+        }
+      }
+    ]
+  }
+}

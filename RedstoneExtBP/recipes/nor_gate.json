@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_nor_gate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "wr:or_gate"
+      }
+    ],
+    "pattern": [
+      "G",
+      "T"
+    ],
+    "key": {
+      "G": {
+        "item": "wr:or_gate"
+      },
+      "T": {
+        "item": "minecraft:redstone_torch"
+      }
+    },
+    "result": {
+      "item": "wr:nor_gate",
+      "count": 1
+    }
+  }
+}

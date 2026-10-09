@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:circuit_board",
+      "menu_category": {
+        "category": "construction",
+        "group": "wr:itemGroup.name.build_ext"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:circuit_board.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_circuit_board",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      }
+    }
+  }
+}

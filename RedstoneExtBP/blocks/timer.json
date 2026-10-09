@@ -1,0 +1,134 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:timer",
+      "menu_category": {
+        "category": "items",
+        "group": "wr:itemGroup.name.redstone_ext"
+      },
+      "states": {
+        "wr:on": [
+          false,
+          true
+        ],
+        "wr:armed": [
+          false,
+          true
+        ],
+        "wr:every": [
+          false,
+          true
+        ],
+        "wr:hour_tens": [
+          0,
+          1,
+          2
+        ],
+        "wr:hour_ones": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:timer.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_timer_side",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "wr_timer_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": false,
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          20,
+          20
+        ],
+        "looping": true
+      },
+      "minecraft:redstone_producer": {
+        "power": 0
+      },
+      "wr:timer": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('wr:on') == false",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_timer_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_timer_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:on') == true",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_timer_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_timer_top_on",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ],
+            "strongly_powered_face": "up"
+          }
+        }
+      }
+    ]
+  }
+}

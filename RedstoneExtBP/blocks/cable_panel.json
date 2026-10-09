@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:cable_panel",
+      "menu_category": {
+        "category": "construction",
+        "group": "wr:itemGroup.name.build_ext"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:cable_panel.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_cable_panel",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      }
+    }
+  }
+}

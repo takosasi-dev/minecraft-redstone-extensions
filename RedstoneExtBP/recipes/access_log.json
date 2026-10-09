@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_access_log"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:paper"
+      }
+    ],
+    "pattern": [
+      "IPI",
+      "PBP",
+      "IPI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "P": {
+        "item": "minecraft:paper"
+      },
+      "B": {
+        "item": "minecraft:book"
+      }
+    },
+    "result": {
+      "item": "wr:access_log",
+      "count": 1
+    }
+  }
+}

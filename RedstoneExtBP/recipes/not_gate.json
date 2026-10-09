@@ -1,0 +1,31 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_not_gate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:redstone_torch"
+      }
+    ],
+    "pattern": [
+      "STS"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stone"
+      },
+      "T": {
+        "item": "minecraft:redstone_torch"
+      }
+    },
+    "result": {
+      "item": "wr:not_gate",
+      "count": 1
+    }
+  }
+}

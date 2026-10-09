@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_probe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:redstone"
+      }
+    ],
+    "pattern": [
+      "G",
+      "R",
+      "S"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "wr:probe",
+      "count": 1
+    }
+  }
+}

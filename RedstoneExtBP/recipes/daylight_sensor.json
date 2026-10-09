@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wr:recipe_daylight_sensor"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:quartz"
+      }
+    ],
+    "pattern": [
+      "GGG",
+      "QQQ",
+      "WWW"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "W": {
+        "item": "minecraft:oak_slab"
+      },
+      "Q": {
+        "item": "minecraft:quartz"
+      }
+    },
+    "result": {
+      "item": "wr:daylight_sensor",
+      "count": 1
+    }
+  }
+}

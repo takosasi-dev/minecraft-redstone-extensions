@@ -1,0 +1,24 @@
+{
+  "resource_pack_name": "RedstoneExtRP",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "wr_card_key": {
+      "textures": "textures/items/wr_card_key"
+    },
+    "wr_config_tool": {
+      "textures": "textures/items/wr_config_tool"
+    },
+    "wr_guide_book": {
+      "textures": "textures/items/wr_guide_book"
+    },
+    "wr_probe": {
+      "textures": "textures/items/wr_probe"
+    },
+    "wr_remote": {
+      "textures": "textures/items/wr_remote"
+    },
+    "wr_wrench": {
+      "textures": "textures/items/wr_wrench"
+    }
+  }
+}

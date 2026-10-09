@@ -1,0 +1,680 @@
+{
+  "resource_pack_name": "RedstoneExtRP",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "wr_access_log_side": {
+      "textures": "textures/blocks/wr_access_log_side"
+    },
+    "wr_access_log_top": {
+      "textures": "textures/blocks/wr_access_log_top"
+    },
+    "wr_adder_side": {
+      "textures": "textures/blocks/wr_adder_side"
+    },
+    "wr_adder_top": {
+      "textures": "textures/blocks/wr_adder_top"
+    },
+    "wr_adder_top_on": {
+      "textures": "textures/blocks/wr_adder_top_on"
+    },
+    "wr_and_gate_side": {
+      "textures": "textures/blocks/wr_and_gate_side"
+    },
+    "wr_and_gate_top": {
+      "textures": "textures/blocks/wr_and_gate_top"
+    },
+    "wr_and_gate_top_on": {
+      "textures": "textures/blocks/wr_and_gate_top_on"
+    },
+    "wr_asym_repeater_side": {
+      "textures": "textures/blocks/wr_asym_repeater_side"
+    },
+    "wr_asym_repeater_top": {
+      "textures": "textures/blocks/wr_asym_repeater_top"
+    },
+    "wr_asym_repeater_top_on": {
+      "textures": "textures/blocks/wr_asym_repeater_top_on"
+    },
+    "wr_block_breaker_side": {
+      "textures": "textures/blocks/wr_block_breaker_side"
+    },
+    "wr_block_breaker_top": {
+      "textures": "textures/blocks/wr_block_breaker_top"
+    },
+    "wr_block_breaker_top_on": {
+      "textures": "textures/blocks/wr_block_breaker_top_on"
+    },
+    "wr_block_dispenser_side": {
+      "textures": "textures/blocks/wr_block_dispenser_side"
+    },
+    "wr_block_dispenser_top": {
+      "textures": "textures/blocks/wr_block_dispenser_top"
+    },
+    "wr_block_dispenser_top_on": {
+      "textures": "textures/blocks/wr_block_dispenser_top_on"
+    },
+    "wr_cable_panel": {
+      "textures": "textures/blocks/wr_cable_panel"
+    },
+    "wr_channel_hub_side": {
+      "textures": "textures/blocks/wr_channel_hub_side"
+    },
+    "wr_channel_hub_top": {
+      "textures": "textures/blocks/wr_channel_hub_top"
+    },
+    "wr_circuit_board": {
+      "textures": "textures/blocks/wr_circuit_board"
+    },
+    "wr_clock_divider_side": {
+      "textures": "textures/blocks/wr_clock_divider_side"
+    },
+    "wr_clock_divider_top": {
+      "textures": "textures/blocks/wr_clock_divider_top"
+    },
+    "wr_clock_divider_top_on": {
+      "textures": "textures/blocks/wr_clock_divider_top_on"
+    },
+    "wr_compare_side": {
+      "textures": "textures/blocks/wr_compare_side"
+    },
+    "wr_compare_top": {
+      "textures": "textures/blocks/wr_compare_top"
+    },
+    "wr_compare_top_on": {
+      "textures": "textures/blocks/wr_compare_top_on"
+    },
+    "wr_constant": {
+      "textures": "textures/blocks/wr_constant"
+    },
+    "wr_constant_on": {
+      "textures": "textures/blocks/wr_constant_on"
+    },
+    "wr_container_sensor_side": {
+      "textures": "textures/blocks/wr_container_sensor_side"
+    },
+    "wr_container_sensor_top": {
+      "textures": "textures/blocks/wr_container_sensor_top"
+    },
+    "wr_container_sensor_top_on": {
+      "textures": "textures/blocks/wr_container_sensor_top_on"
+    },
+    "wr_corner_riser": {
+      "textures": "textures/blocks/wr_corner_riser"
+    },
+    "wr_counter_side": {
+      "textures": "textures/blocks/wr_counter_side"
+    },
+    "wr_counter_top": {
+      "textures": "textures/blocks/wr_counter_top"
+    },
+    "wr_counter_top_on": {
+      "textures": "textures/blocks/wr_counter_top_on"
+    },
+    "wr_daylight_sensor_side": {
+      "textures": "textures/blocks/wr_daylight_sensor_side"
+    },
+    "wr_daylight_sensor_top": {
+      "textures": "textures/blocks/wr_daylight_sensor_top"
+    },
+    "wr_daylight_sensor_top_on": {
+      "textures": "textures/blocks/wr_daylight_sensor_top_on"
+    },
+    "wr_display_0": {
+      "textures": "textures/blocks/wr_display_0"
+    },
+    "wr_display_1": {
+      "textures": "textures/blocks/wr_display_1"
+    },
+    "wr_display_2": {
+      "textures": "textures/blocks/wr_display_2"
+    },
+    "wr_display_3": {
+      "textures": "textures/blocks/wr_display_3"
+    },
+    "wr_display_4": {
+      "textures": "textures/blocks/wr_display_4"
+    },
+    "wr_display_5": {
+      "textures": "textures/blocks/wr_display_5"
+    },
+    "wr_display_6": {
+      "textures": "textures/blocks/wr_display_6"
+    },
+    "wr_display_7": {
+      "textures": "textures/blocks/wr_display_7"
+    },
+    "wr_display_8": {
+      "textures": "textures/blocks/wr_display_8"
+    },
+    "wr_display_9": {
+      "textures": "textures/blocks/wr_display_9"
+    },
+    "wr_display_a": {
+      "textures": "textures/blocks/wr_display_a"
+    },
+    "wr_display_b": {
+      "textures": "textures/blocks/wr_display_b"
+    },
+    "wr_display_c": {
+      "textures": "textures/blocks/wr_display_c"
+    },
+    "wr_display_d": {
+      "textures": "textures/blocks/wr_display_d"
+    },
+    "wr_display_e": {
+      "textures": "textures/blocks/wr_display_e"
+    },
+    "wr_display_f": {
+      "textures": "textures/blocks/wr_display_f"
+    },
+    "wr_display_top": {
+      "textures": "textures/blocks/wr_display_top"
+    },
+    "wr_entity_sensor_side": {
+      "textures": "textures/blocks/wr_entity_sensor_side"
+    },
+    "wr_entity_sensor_top": {
+      "textures": "textures/blocks/wr_entity_sensor_top"
+    },
+    "wr_entity_sensor_top_on": {
+      "textures": "textures/blocks/wr_entity_sensor_top_on"
+    },
+    "wr_glow_block_black": {
+      "textures": "textures/blocks/wr_glow_block_black"
+    },
+    "wr_glow_block_blue": {
+      "textures": "textures/blocks/wr_glow_block_blue"
+    },
+    "wr_glow_block_brown": {
+      "textures": "textures/blocks/wr_glow_block_brown"
+    },
+    "wr_glow_block_cyan": {
+      "textures": "textures/blocks/wr_glow_block_cyan"
+    },
+    "wr_glow_block_gray": {
+      "textures": "textures/blocks/wr_glow_block_gray"
+    },
+    "wr_glow_block_green": {
+      "textures": "textures/blocks/wr_glow_block_green"
+    },
+    "wr_glow_block_light_blue": {
+      "textures": "textures/blocks/wr_glow_block_light_blue"
+    },
+    "wr_glow_block_light_gray": {
+      "textures": "textures/blocks/wr_glow_block_light_gray"
+    },
+    "wr_glow_block_lime": {
+      "textures": "textures/blocks/wr_glow_block_lime"
+    },
+    "wr_glow_block_magenta": {
+      "textures": "textures/blocks/wr_glow_block_magenta"
+    },
+    "wr_glow_block_orange": {
+      "textures": "textures/blocks/wr_glow_block_orange"
+    },
+    "wr_glow_block_pink": {
+      "textures": "textures/blocks/wr_glow_block_pink"
+    },
+    "wr_glow_block_purple": {
+      "textures": "textures/blocks/wr_glow_block_purple"
+    },
+    "wr_glow_block_red": {
+      "textures": "textures/blocks/wr_glow_block_red"
+    },
+    "wr_glow_block_white": {
+      "textures": "textures/blocks/wr_glow_block_white"
+    },
+    "wr_glow_block_yellow": {
+      "textures": "textures/blocks/wr_glow_block_yellow"
+    },
+    "wr_hazard_stripe": {
+      "textures": "textures/blocks/wr_hazard_stripe"
+    },
+    "wr_hopper_dropper_side": {
+      "textures": "textures/blocks/wr_hopper_dropper_side"
+    },
+    "wr_hopper_dropper_top": {
+      "textures": "textures/blocks/wr_hopper_dropper_top"
+    },
+    "wr_hopper_dropper_top_on": {
+      "textures": "textures/blocks/wr_hopper_dropper_top_on"
+    },
+    "wr_instant_repeater_side": {
+      "textures": "textures/blocks/wr_instant_repeater_side"
+    },
+    "wr_instant_repeater_top": {
+      "textures": "textures/blocks/wr_instant_repeater_top"
+    },
+    "wr_instant_repeater_top_on": {
+      "textures": "textures/blocks/wr_instant_repeater_top_on"
+    },
+    "wr_key_terminal_side": {
+      "textures": "textures/blocks/wr_key_terminal_side"
+    },
+    "wr_key_terminal_top": {
+      "textures": "textures/blocks/wr_key_terminal_top"
+    },
+    "wr_lamp_black": {
+      "textures": "textures/blocks/wr_lamp_black"
+    },
+    "wr_lamp_black_on": {
+      "textures": "textures/blocks/wr_lamp_black_on"
+    },
+    "wr_lamp_blue": {
+      "textures": "textures/blocks/wr_lamp_blue"
+    },
+    "wr_lamp_blue_on": {
+      "textures": "textures/blocks/wr_lamp_blue_on"
+    },
+    "wr_lamp_brown": {
+      "textures": "textures/blocks/wr_lamp_brown"
+    },
+    "wr_lamp_brown_on": {
+      "textures": "textures/blocks/wr_lamp_brown_on"
+    },
+    "wr_lamp_cyan": {
+      "textures": "textures/blocks/wr_lamp_cyan"
+    },
+    "wr_lamp_cyan_on": {
+      "textures": "textures/blocks/wr_lamp_cyan_on"
+    },
+    "wr_lamp_gray": {
+      "textures": "textures/blocks/wr_lamp_gray"
+    },
+    "wr_lamp_gray_on": {
+      "textures": "textures/blocks/wr_lamp_gray_on"
+    },
+    "wr_lamp_green": {
+      "textures": "textures/blocks/wr_lamp_green"
+    },
+    "wr_lamp_green_on": {
+      "textures": "textures/blocks/wr_lamp_green_on"
+    },
+    "wr_lamp_light_blue": {
+      "textures": "textures/blocks/wr_lamp_light_blue"
+    },
+    "wr_lamp_light_blue_on": {
+      "textures": "textures/blocks/wr_lamp_light_blue_on"
+    },
+    "wr_lamp_light_gray": {
+      "textures": "textures/blocks/wr_lamp_light_gray"
+    },
+    "wr_lamp_light_gray_on": {
+      "textures": "textures/blocks/wr_lamp_light_gray_on"
+    },
+    "wr_lamp_lime": {
+      "textures": "textures/blocks/wr_lamp_lime"
+    },
+    "wr_lamp_lime_on": {
+      "textures": "textures/blocks/wr_lamp_lime_on"
+    },
+    "wr_lamp_magenta": {
+      "textures": "textures/blocks/wr_lamp_magenta"
+    },
+    "wr_lamp_magenta_on": {
+      "textures": "textures/blocks/wr_lamp_magenta_on"
+    },
+    "wr_lamp_orange": {
+      "textures": "textures/blocks/wr_lamp_orange"
+    },
+    "wr_lamp_orange_on": {
+      "textures": "textures/blocks/wr_lamp_orange_on"
+    },
+    "wr_lamp_pink": {
+      "textures": "textures/blocks/wr_lamp_pink"
+    },
+    "wr_lamp_pink_on": {
+      "textures": "textures/blocks/wr_lamp_pink_on"
+    },
+    "wr_lamp_purple": {
+      "textures": "textures/blocks/wr_lamp_purple"
+    },
+    "wr_lamp_purple_on": {
+      "textures": "textures/blocks/wr_lamp_purple_on"
+    },
+    "wr_lamp_red": {
+      "textures": "textures/blocks/wr_lamp_red"
+    },
+    "wr_lamp_red_on": {
+      "textures": "textures/blocks/wr_lamp_red_on"
+    },
+    "wr_lamp_white": {
+      "textures": "textures/blocks/wr_lamp_white"
+    },
+    "wr_lamp_white_on": {
+      "textures": "textures/blocks/wr_lamp_white_on"
+    },
+    "wr_lamp_yellow": {
+      "textures": "textures/blocks/wr_lamp_yellow"
+    },
+    "wr_lamp_yellow_on": {
+      "textures": "textures/blocks/wr_lamp_yellow_on"
+    },
+    "wr_light_panel": {
+      "textures": "textures/blocks/wr_light_panel"
+    },
+    "wr_lock_side": {
+      "textures": "textures/blocks/wr_lock_side"
+    },
+    "wr_lock_top": {
+      "textures": "textures/blocks/wr_lock_top"
+    },
+    "wr_lock_top_on": {
+      "textures": "textures/blocks/wr_lock_top_on"
+    },
+    "wr_machine_panel": {
+      "textures": "textures/blocks/wr_machine_panel"
+    },
+    "wr_nand_gate_side": {
+      "textures": "textures/blocks/wr_nand_gate_side"
+    },
+    "wr_nand_gate_top": {
+      "textures": "textures/blocks/wr_nand_gate_top"
+    },
+    "wr_nand_gate_top_on": {
+      "textures": "textures/blocks/wr_nand_gate_top_on"
+    },
+    "wr_nor_gate_side": {
+      "textures": "textures/blocks/wr_nor_gate_side"
+    },
+    "wr_nor_gate_top": {
+      "textures": "textures/blocks/wr_nor_gate_top"
+    },
+    "wr_nor_gate_top_on": {
+      "textures": "textures/blocks/wr_nor_gate_top_on"
+    },
+    "wr_not_gate_side": {
+      "textures": "textures/blocks/wr_not_gate_side"
+    },
+    "wr_not_gate_top": {
+      "textures": "textures/blocks/wr_not_gate_top"
+    },
+    "wr_not_gate_top_on": {
+      "textures": "textures/blocks/wr_not_gate_top_on"
+    },
+    "wr_one_shot_side": {
+      "textures": "textures/blocks/wr_one_shot_side"
+    },
+    "wr_one_shot_top": {
+      "textures": "textures/blocks/wr_one_shot_top"
+    },
+    "wr_one_shot_top_on": {
+      "textures": "textures/blocks/wr_one_shot_top_on"
+    },
+    "wr_or_gate_side": {
+      "textures": "textures/blocks/wr_or_gate_side"
+    },
+    "wr_or_gate_top": {
+      "textures": "textures/blocks/wr_or_gate_top"
+    },
+    "wr_or_gate_top_on": {
+      "textures": "textures/blocks/wr_or_gate_top_on"
+    },
+    "wr_ore_refiner_side": {
+      "textures": "textures/blocks/wr_ore_refiner_side"
+    },
+    "wr_ore_refiner_top": {
+      "textures": "textures/blocks/wr_ore_refiner_top"
+    },
+    "wr_ore_refiner_top_on": {
+      "textures": "textures/blocks/wr_ore_refiner_top_on"
+    },
+    "wr_polished_amethyst": {
+      "textures": "textures/blocks/wr_polished_amethyst"
+    },
+    "wr_pulse_generator_side": {
+      "textures": "textures/blocks/wr_pulse_generator_side"
+    },
+    "wr_pulse_generator_top": {
+      "textures": "textures/blocks/wr_pulse_generator_top"
+    },
+    "wr_pulse_generator_top_on": {
+      "textures": "textures/blocks/wr_pulse_generator_top_on"
+    },
+    "wr_randomizer_side": {
+      "textures": "textures/blocks/wr_randomizer_side"
+    },
+    "wr_randomizer_top": {
+      "textures": "textures/blocks/wr_randomizer_top"
+    },
+    "wr_randomizer_top_on": {
+      "textures": "textures/blocks/wr_randomizer_top_on"
+    },
+    "wr_receiver": {
+      "textures": "textures/blocks/wr_receiver"
+    },
+    "wr_receiver_on": {
+      "textures": "textures/blocks/wr_receiver_on"
+    },
+    "wr_register_side": {
+      "textures": "textures/blocks/wr_register_side"
+    },
+    "wr_register_top": {
+      "textures": "textures/blocks/wr_register_top"
+    },
+    "wr_register_top_on": {
+      "textures": "textures/blocks/wr_register_top_on"
+    },
+    "wr_rs_latch_side": {
+      "textures": "textures/blocks/wr_rs_latch_side"
+    },
+    "wr_rs_latch_top": {
+      "textures": "textures/blocks/wr_rs_latch_top"
+    },
+    "wr_rs_latch_top_on": {
+      "textures": "textures/blocks/wr_rs_latch_top_on"
+    },
+    "wr_sequencer_side": {
+      "textures": "textures/blocks/wr_sequencer_side"
+    },
+    "wr_sequencer_top": {
+      "textures": "textures/blocks/wr_sequencer_top"
+    },
+    "wr_sequencer_top_on": {
+      "textures": "textures/blocks/wr_sequencer_top_on"
+    },
+    "wr_sound_block_side": {
+      "textures": "textures/blocks/wr_sound_block_side"
+    },
+    "wr_sound_block_top": {
+      "textures": "textures/blocks/wr_sound_block_top"
+    },
+    "wr_sound_block_top_on": {
+      "textures": "textures/blocks/wr_sound_block_top_on"
+    },
+    "wr_spike_side": {
+      "textures": "textures/blocks/wr_spike_side"
+    },
+    "wr_spike_top": {
+      "textures": "textures/blocks/wr_spike_top"
+    },
+    "wr_spike_top_hot": {
+      "textures": "textures/blocks/wr_spike_top_hot"
+    },
+    "wr_spike_top_on": {
+      "textures": "textures/blocks/wr_spike_top_on"
+    },
+    "wr_subtractor_side": {
+      "textures": "textures/blocks/wr_subtractor_side"
+    },
+    "wr_subtractor_top": {
+      "textures": "textures/blocks/wr_subtractor_top"
+    },
+    "wr_subtractor_top_on": {
+      "textures": "textures/blocks/wr_subtractor_top_on"
+    },
+    "wr_t_flipflop_side": {
+      "textures": "textures/blocks/wr_t_flipflop_side"
+    },
+    "wr_t_flipflop_top": {
+      "textures": "textures/blocks/wr_t_flipflop_top"
+    },
+    "wr_t_flipflop_top_on": {
+      "textures": "textures/blocks/wr_t_flipflop_top_on"
+    },
+    "wr_threshold_side": {
+      "textures": "textures/blocks/wr_threshold_side"
+    },
+    "wr_threshold_top": {
+      "textures": "textures/blocks/wr_threshold_top"
+    },
+    "wr_threshold_top_on": {
+      "textures": "textures/blocks/wr_threshold_top_on"
+    },
+    "wr_timer_side": {
+      "textures": "textures/blocks/wr_timer_side"
+    },
+    "wr_timer_top": {
+      "textures": "textures/blocks/wr_timer_top"
+    },
+    "wr_timer_top_on": {
+      "textures": "textures/blocks/wr_timer_top_on"
+    },
+    "wr_transmitter": {
+      "textures": "textures/blocks/wr_transmitter"
+    },
+    "wr_variable_repeater_side": {
+      "textures": "textures/blocks/wr_variable_repeater_side"
+    },
+    "wr_variable_repeater_top": {
+      "textures": "textures/blocks/wr_variable_repeater_top"
+    },
+    "wr_variable_repeater_top_on": {
+      "textures": "textures/blocks/wr_variable_repeater_top_on"
+    },
+    "wr_weather_sensor_side": {
+      "textures": "textures/blocks/wr_weather_sensor_side"
+    },
+    "wr_weather_sensor_top": {
+      "textures": "textures/blocks/wr_weather_sensor_top"
+    },
+    "wr_weather_sensor_top_on": {
+      "textures": "textures/blocks/wr_weather_sensor_top_on"
+    },
+    "wr_wire_black": {
+      "textures": "textures/blocks/wr_wire_black"
+    },
+    "wr_wire_black_on": {
+      "textures": "textures/blocks/wr_wire_black_on"
+    },
+    "wr_wire_blue": {
+      "textures": "textures/blocks/wr_wire_blue"
+    },
+    "wr_wire_blue_on": {
+      "textures": "textures/blocks/wr_wire_blue_on"
+    },
+    "wr_wire_brown": {
+      "textures": "textures/blocks/wr_wire_brown"
+    },
+    "wr_wire_brown_on": {
+      "textures": "textures/blocks/wr_wire_brown_on"
+    },
+    "wr_wire_cyan": {
+      "textures": "textures/blocks/wr_wire_cyan"
+    },
+    "wr_wire_cyan_on": {
+      "textures": "textures/blocks/wr_wire_cyan_on"
+    },
+    "wr_wire_gray": {
+      "textures": "textures/blocks/wr_wire_gray"
+    },
+    "wr_wire_gray_on": {
+      "textures": "textures/blocks/wr_wire_gray_on"
+    },
+    "wr_wire_green": {
+      "textures": "textures/blocks/wr_wire_green"
+    },
+    "wr_wire_green_on": {
+      "textures": "textures/blocks/wr_wire_green_on"
+    },
+    "wr_wire_light_blue": {
+      "textures": "textures/blocks/wr_wire_light_blue"
+    },
+    "wr_wire_light_blue_on": {
+      "textures": "textures/blocks/wr_wire_light_blue_on"
+    },
+    "wr_wire_light_gray": {
+      "textures": "textures/blocks/wr_wire_light_gray"
+    },
+    "wr_wire_light_gray_on": {
+      "textures": "textures/blocks/wr_wire_light_gray_on"
+    },
+    "wr_wire_lime": {
+      "textures": "textures/blocks/wr_wire_lime"
+    },
+    "wr_wire_lime_on": {
+      "textures": "textures/blocks/wr_wire_lime_on"
+    },
+    "wr_wire_magenta": {
+      "textures": "textures/blocks/wr_wire_magenta"
+    },
+    "wr_wire_magenta_on": {
+      "textures": "textures/blocks/wr_wire_magenta_on"
+    },
+    "wr_wire_orange": {
+      "textures": "textures/blocks/wr_wire_orange"
+    },
+    "wr_wire_orange_on": {
+      "textures": "textures/blocks/wr_wire_orange_on"
+    },
+    "wr_wire_pink": {
+      "textures": "textures/blocks/wr_wire_pink"
+    },
+    "wr_wire_pink_on": {
+      "textures": "textures/blocks/wr_wire_pink_on"
+    },
+    "wr_wire_purple": {
+      "textures": "textures/blocks/wr_wire_purple"
+    },
+    "wr_wire_purple_on": {
+      "textures": "textures/blocks/wr_wire_purple_on"
+    },
+    "wr_wire_red": {
+      "textures": "textures/blocks/wr_wire_red"
+    },
+    "wr_wire_red_on": {
+      "textures": "textures/blocks/wr_wire_red_on"
+    },
+    "wr_wire_white": {
+      "textures": "textures/blocks/wr_wire_white"
+    },
+    "wr_wire_white_on": {
+      "textures": "textures/blocks/wr_wire_white_on"
+    },
+    "wr_wire_yellow": {
+      "textures": "textures/blocks/wr_wire_yellow"
+    },
+    "wr_wire_yellow_on": {
+      "textures": "textures/blocks/wr_wire_yellow_on"
+    },
+    "wr_xnor_gate_side": {
+      "textures": "textures/blocks/wr_xnor_gate_side"
+    },
+    "wr_xnor_gate_top": {
+      "textures": "textures/blocks/wr_xnor_gate_top"
+    },
+    "wr_xnor_gate_top_on": {
+      "textures": "textures/blocks/wr_xnor_gate_top_on"
+    },
+    "wr_xor_gate_side": {
+      "textures": "textures/blocks/wr_xor_gate_side"
+    },
+    "wr_xor_gate_top": {
+      "textures": "textures/blocks/wr_xor_gate_top"
+    },
+    "wr_xor_gate_top_on": {
+      "textures": "textures/blocks/wr_xor_gate_top_on"
+    },
+    "wr_xp_tank_side": {
+      "textures": "textures/blocks/wr_xp_tank_side"
+    },
+    "wr_xp_tank_top": {
+      "textures": "textures/blocks/wr_xp_tank_top"
+    },
+    "wr_xp_tank_top_on": {
+      "textures": "textures/blocks/wr_xp_tank_top_on"
+    }
+  }
+}

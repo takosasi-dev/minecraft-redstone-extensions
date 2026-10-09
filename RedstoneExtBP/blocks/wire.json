@@ -1,0 +1,1056 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:wire",
+      "menu_category": {
+        "category": "items",
+        "group": "wr:itemGroup.name.redstone_ext"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      },
+      "states": {
+        "wr:power": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "wr:color": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "wr:c0": [
+          false,
+          true
+        ],
+        "wr:c1": [
+          false,
+          true
+        ],
+        "wr:c2": [
+          false,
+          true
+        ],
+        "wr:c3": [
+          false,
+          true
+        ],
+        "wr:glow": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:wire.name",
+      "minecraft:geometry": {
+        "identifier": "geometry.wr_wire_down",
+        "bone_visibility": {
+          "arm_c0": "q.block_state('wr:c0')",
+          "arm_c1": "q.block_state('wr:c1')",
+          "arm_c2": "q.block_state('wr:c2')",
+          "arm_c3": "q.block_state('wr:c3')"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_wire_red",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          1,
+          16
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 0,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": false,
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:redstone_producer": {
+        "power": 0
+      },
+      "minecraft:movable": {
+        "movement_type": "popped"
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          4,
+          4
+        ],
+        "looping": true
+      },
+      "wr:wire": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wr_wire_down",
+            "bone_visibility": {
+              "arm_c0": "q.block_state('wr:c0')",
+              "arm_c1": "q.block_state('wr:c1')",
+              "arm_c2": "q.block_state('wr:c2')",
+              "arm_c3": "q.block_state('wr:c3')"
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              1,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wr_wire_up",
+            "bone_visibility": {
+              "arm_c0": "q.block_state('wr:c0')",
+              "arm_c1": "q.block_state('wr:c1')",
+              "arm_c2": "q.block_state('wr:c2')",
+              "arm_c3": "q.block_state('wr:c3')"
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              15,
+              -8
+            ],
+            "size": [
+              16,
+              1,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wr_wire_south",
+            "bone_visibility": {
+              "arm_c0": "q.block_state('wr:c0')",
+              "arm_c1": "q.block_state('wr:c1')",
+              "arm_c2": "q.block_state('wr:c2')",
+              "arm_c3": "q.block_state('wr:c3')"
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              7
+            ],
+            "size": [
+              16,
+              16,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wr_wire_north",
+            "bone_visibility": {
+              "arm_c0": "q.block_state('wr:c0')",
+              "arm_c1": "q.block_state('wr:c1')",
+              "arm_c2": "q.block_state('wr:c2')",
+              "arm_c3": "q.block_state('wr:c3')"
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wr_wire_west",
+            "bone_visibility": {
+              "arm_c0": "q.block_state('wr:c0')",
+              "arm_c1": "q.block_state('wr:c1')",
+              "arm_c2": "q.block_state('wr:c2')",
+              "arm_c3": "q.block_state('wr:c3')"
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              7,
+              0,
+              -8
+            ],
+            "size": [
+              1,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wr_wire_east",
+            "bone_visibility": {
+              "arm_c0": "q.block_state('wr:c0')",
+              "arm_c1": "q.block_state('wr:c1')",
+              "arm_c2": "q.block_state('wr:c2')",
+              "arm_c3": "q.block_state('wr:c3')"
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              1,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 1",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 1,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 2",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 2,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 3",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 3,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 4",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 4,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 5",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 5,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 6",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 6,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 7",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 7,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 8",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 8,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 9",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 9,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 10",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 10,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 11",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 11,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 12",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 12,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 13",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 13,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 14",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 14,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:power') == 15",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "connected_faces": [
+              "down",
+              "up",
+              "north",
+              "south",
+              "west",
+              "east"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 1",
+        "components": {
+          "minecraft:light_emission": 1
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 2",
+        "components": {
+          "minecraft:light_emission": 2
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 3",
+        "components": {
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 4",
+        "components": {
+          "minecraft:light_emission": 4
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 5",
+        "components": {
+          "minecraft:light_emission": 5
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 6",
+        "components": {
+          "minecraft:light_emission": 6
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 7",
+        "components": {
+          "minecraft:light_emission": 7
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 8",
+        "components": {
+          "minecraft:light_emission": 8
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 9",
+        "components": {
+          "minecraft:light_emission": 9
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 10",
+        "components": {
+          "minecraft:light_emission": 10
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 11",
+        "components": {
+          "minecraft:light_emission": 11
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 12",
+        "components": {
+          "minecraft:light_emission": 12
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 13",
+        "components": {
+          "minecraft:light_emission": 13
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 14",
+        "components": {
+          "minecraft:light_emission": 14
+        }
+      },
+      {
+        "condition": "q.block_state('wr:glow') == true && q.block_state('wr:power') == 15",
+        "components": {
+          "minecraft:light_emission": 15
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 0 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_red",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 0 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_red_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 1 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_white",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 1 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_white_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 2 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_orange",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 2 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_orange_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 3 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_magenta",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 3 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_magenta_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 4 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_light_blue",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 4 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_light_blue_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 5 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_yellow",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 5 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_yellow_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 6 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_lime",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 6 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_lime_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 7 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_pink",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 7 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_pink_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 8 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_gray",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 8 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_gray_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 9 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_light_gray",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 9 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_light_gray_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 10 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_cyan",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 10 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_cyan_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 11 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_purple",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 11 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_purple_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 12 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_blue",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 12 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_blue_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 13 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_brown",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 13 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_brown_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 14 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_green",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 14 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_green_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 15 && q.block_state('wr:power') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_black",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:color') == 15 && q.block_state('wr:power') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_wire_black_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

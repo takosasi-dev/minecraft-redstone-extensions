@@ -1,0 +1,93 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wr:ore_refiner",
+      "menu_category": {
+        "category": "items",
+        "group": "wr:itemGroup.name.redstone_ext"
+      },
+      "states": {
+        "wr:busy": [
+          false,
+          true
+        ],
+        "wr:disabled": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.wr:ore_refiner.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "wr_ore_refiner_side",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "wr_ore_refiner_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:redstone_consumer": {
+        "min_power": 0,
+        "propagates_power": false
+      },
+      "minecraft:movable": {
+        "movement_type": "immovable"
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          20,
+          20
+        ],
+        "looping": true
+      },
+      "wr:ore_refiner": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('wr:busy') == false",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_ore_refiner_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_ore_refiner_top",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wr:busy') == true",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wr_ore_refiner_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "wr_ore_refiner_top_on",
+              "render_method": "opaque"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
